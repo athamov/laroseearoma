@@ -1,0 +1,71 @@
+.application {
+  padding: 60px 0;
+} 
+
+.app-item {
+  position: relative;
+}
+
+.app-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: rgba(146, 39, 143, .5);
+  color: white;
+  width: 500px;
+  padding: 30px;
+  max-width: 100%;
+  -webkit-animation: slide 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation: slide 0.5s linear;
+  animation-delay: 0.5s;
+}
+
+.app-title {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.app-content p {
+  text-align: center;
+  max-height: 100%;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    left: 50%;
+    top: 50%;
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform: rotateY(180deg);
+  }
+}

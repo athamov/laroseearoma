@@ -1,0 +1,123 @@
+.animate-left {
+  position: relative;
+  animation: animateleft 0.4s;
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 0.4s
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0
+  }
+
+  to {
+    right: 0;
+    opacity: 1
+  }
+}
+
+.w3-center {
+  text-align: center;
+  content: "";
+  display: table;
+  clear: both;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+.w3-container:after,
+.w3-container:before,
+.w3-panel:after,
+.w3-panel:before,
+.w3-row:after,
+.w3-row:before,
+.w3-row-padding:after,
+.w3-row-padding:before,
+.w3-cell-row:before,
+.w3-cell-row:after,
+.w3-clear:after,
+.w3-clear:before,
+.w3-bar:before,
+.w3-bar:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.w3-section,
+.w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important
+}
+
+.w3-badge,
+.w3-tag {
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.w3-transparent,
+.w3-hover-none:hover {
+  background-color: transparent;
+}
+
+.w3-hover-red:hover {
+  color: #fff !important;
+  background-color: #f44336 !important
+}
+
+
+.carousel-control.right {
+  background-image: none !important;
+}
+
+.carousel-control.left {
+  background-image: none !important;
+}
+
+.glyphicon-chevron-right:before {
+  color: #92278f;
+}
+
+.glyphicon-chevron-left:before {
+  color: #92278f;
+}
+
+.carousel-indicators .active {
+  background-color: #92278f;
+}
+
+.carousel-indicators li {
+  border-color: #92278f;
+}
